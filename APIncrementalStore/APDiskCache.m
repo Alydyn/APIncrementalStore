@@ -50,7 +50,7 @@
 - (id)init {
     
     if (AP_DEBUG_METHODS) { MLog()}
-    [NSException raise:APIncrementalStoreExceptionInconsistency format:@"Use the correct designated initializer please"];
+    [NSException raise:APIncrementalStoreExceptionInconsistency format:@"Use the correct designated initialiser please"];
     return nil;
 }
 
@@ -119,7 +119,7 @@
         if (!delete) {
             [NSException raise:APIncrementalStoreExceptionLocalCacheStore format:@""];
         } else {
-            if (AP_DEBUG_INFO) { DLog(@"Cache store removed successfully") };
+            if (AP_DEBUG_INFO) { DLog(@"Cache store removed succesfuly") };
         }
     }
 }
@@ -141,11 +141,11 @@
     
     if (AP_DEBUG_METHODS) { MLog() }
     
-    // Remove any previously registered store
+    // Remove any previously registred store
     [self.psc.persistentStores enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         NSError* error;
         if (![self.psc removePersistentStore:obj error:&error]) {
-            [NSException raise:APIncrementalStoreExceptionLocalCacheStore format:@"Unable to remove store - error: %@",error];
+            [NSException raise:APIncrementalStoreExceptionLocalCacheStore format:@"Não foi possivel remover store - error: %@",error];
         }
     }];
 }
@@ -385,7 +385,7 @@
 
 #pragma mark - Translate Predicates
 
-// Translates a user submitted fetchRequest to a "translated" request for local cache queries.
+// Translates a user submited fetchRequest to a "translated" for local cache queries.
 - (NSFetchRequest*) cacheFetchRequestFromFetchRequest:(NSFetchRequest*) fetchRequest requestContext:(NSManagedObjectContext*) requestContext {
     
     if (AP_DEBUG_METHODS) { MLog()}
@@ -449,7 +449,7 @@
    
     if (localError || [results count] > 1) {
         // TODO handle error
-        [NSException raise:APIncrementalStoreExceptionInconsistency format:@"It was supposed to fetch only one object based on the objectUID: %@",objectUID];
+        [NSException raise:APIncrementalStoreExceptionInconsistency format:@"It was supposed to fetch only one objects based on the objectUID: %@",objectUID];
         
     } else if ([results count] == 1) {
         managedObjectRep = [self representationFromManagedObject:[results lastObject]];
@@ -459,7 +459,7 @@
 }
 
 
-// Translates a user submitted predicate to a "translated" one used on local cache queries.
+// Translates a user submited predicate to a "translated" one used on local cache queries.
 - (NSPredicate*) cachePredicateFromPredicate:(NSPredicate *)predicate
                               requestContext:(NSManagedObjectContext*) requestContext
                                forEntityName:(NSString*) entityName {
@@ -651,7 +651,7 @@
 
 #pragma mark - Inserting/Creating/Updating
 
-- (BOOL)insertObjectRepresentations:(NSArray*) representations
+- (BOOL)inserteObjectRepresentations:(NSArray*) representations
                                error:(NSError *__autoreleasing *)error {
     
     if (AP_DEBUG_METHODS) { MLog()}
