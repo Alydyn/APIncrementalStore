@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EA0E0728-2D2A-481B-B35E-EF5E972F12FD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>APIncrementalStore</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>FFCA922143AB4072CC42482D77979C214A86D66A</key>
+		<string>https://github.com/Alydyn/APIncrementalStore.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>APIncrementalStore.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>FFCA922143AB4072CC42482D77979C214A86D66A</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Alydyn/APIncrementalStore.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FFCA922143AB4072CC42482D77979C214A86D66A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FFCA922143AB4072CC42482D77979C214A86D66A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>APIncrementalStore</string>
+		</dict>
+	</array>
+</dict>
+</plist>
